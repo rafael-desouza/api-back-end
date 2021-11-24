@@ -1,0 +1,44 @@
+{
+  "name": "api-back-end",
+  "version": "1.0.0",
+  "description": "Api para testar funcionalidades do backend",
+  "main": "index.js",
+  "repository": "https://github.com/rafael-desouza/api-back-end.git",
+  "author": "Rafael Ferreira de Souza <rafael.souza@sisplansistemas.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "set NODE_ENV=development&& tsnd -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify ./src/index.ts",
+    "test": "set NODE_ENV=test&& jest --i --no-cache --verbose --runInBand --bail"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.3",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.9.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.3",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^16.11.10",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "supertest": "^6.1.6",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "^4.5.2"
+  }
+}
